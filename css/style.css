@@ -83,6 +83,7 @@ body{
     display: flex;
     font-size:30px;
     color:white;
+    max-width:338px;
 }
 
 .btn{
@@ -92,6 +93,12 @@ body{
     padding:6px 18px;
     border: 0px;
     box-shadow:1px 1px 5px black;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow:inset 0px 0px 5px 0px black;
+    background-color:rgb(83, 83, 83);
 }
 
 #panel{
@@ -102,4 +109,31 @@ body{
 #panel span{
     color:white;
     font-weight:600;
+}
+
+.btn-chkoff{
+    display:flex;
+    background-color:#77DD77;
+    border:0px;
+    width:350px;
+    height:50px;
+    border-radius:10px;
+    box-shadow:1px 1px 5px rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color:#165216;
+}
+
+.btn-chkoff:hover{
+    box-shadow:inset 0px 0px 5px 0px black;
+    background-color:#2c4e2c;
+    color:white;
+}
+
+#text-chkoff{
+    display:flex;
+    font-style:italic;
+    font-weight: 700;
+    font-size:24px;
 }
