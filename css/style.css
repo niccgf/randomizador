@@ -36,6 +36,9 @@ body{
 #main{
     display:flex;
     justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    gap:20px;
 }
 
 .contenedor{
@@ -44,6 +47,7 @@ body{
     background-color:#110f11;
     box-shadow:5px 1px 15px white;
     align-items:center;
+    width:50%;
 }
 
 #cont-text{
@@ -68,16 +72,34 @@ body{
 
 #cont-result{
     display:flex;
-    width:100%;
-    height:100%;
+    height:300px;
     border-left:5px solid white;
-    padding:15px;
-
+    width:600px;
+    align-items:center;
+    justify-content: center;
 }
 
 #cont-result .result{
     display: flex;
-    font-size:72px;
+    font-size:30px;
     color:white;
-    align-items:center;
+}
+
+.btn{
+    background-color:gray;
+    border-radius:5px;
+    font-size:15px;
+    padding:6px 18px;
+    border: 0px;
+    box-shadow:1px 1px 5px black;
+}
+
+#panel{
+    display:flex;
+    gap:20px;
+}
+
+#panel span{
+    color:white;
+    font-weight:600;
 }
